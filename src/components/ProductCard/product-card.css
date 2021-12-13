@@ -1,0 +1,21 @@
+.product-card {
+    min-width: 200px;
+    min-height: 150px;
+    padding: 1.5rem 2rem;
+}
+
+.product-card__box {
+    border: 1px solid red;
+    padding: 1rem;
+    position: relative;
+}
+
+.product-card__img {
+    max-height: 100px;
+    max-width: auto;
+}
+
+.product-card__btn {
+    position: absolute;
+    left: auto;
+}
