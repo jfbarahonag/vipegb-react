@@ -5,11 +5,15 @@ import "./footer.css";
 function Footer({}) {
   const links = [
     {
-      title: "FB",
+      title: () => {
+        return (<h1>IG</h1>);
+      },
       url: "/",
     },
     {
-      title: "IG",
+      title: () => {
+        return (<h1>FB</h1>);
+      },
       url: "/",
     },
   ];
@@ -19,7 +23,7 @@ function Footer({}) {
         <ul className="footer-navbar__list">
           {links.map((link) => (
             <li key={link.url} className="footer-navbar__list-item">
-              <a href={link.url}>{link.title}</a>
+              <a href={link.url}>{link.title()}</a>
             </li>
           ))}
         </ul>
