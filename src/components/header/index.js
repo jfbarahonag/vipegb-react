@@ -35,7 +35,7 @@ function Header({ children }) {
   const [expanded, setExpanded] = useState(false)
 
   return (
-    <section className="header">
+    <header className="header">
       <div className="header-logo">
         <h1>logo</h1>
       </div>
@@ -51,7 +51,7 @@ function Header({ children }) {
           ))}
         </ul>
       </nav>
-    </section>
+    </header>
   );
 }
 
