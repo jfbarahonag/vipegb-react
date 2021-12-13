@@ -1,4 +1,5 @@
 import React from "react";
+import { Facebook, Instagram, WhatsApp } from "@mui/icons-material";
 
 import "./footer.css";
 
@@ -6,15 +7,21 @@ function Footer({}) {
   const links = [
     {
       title: () => {
-        return (<h1>IG</h1>);
+        return <Instagram fontSize="large" />;
       },
-      url: "/",
+      url: "https://instagram.com/vipegb?igshid=3vtsczsylf0z",
     },
     {
       title: () => {
-        return (<h1>FB</h1>);
+        return <WhatsApp fontSize="large" />;
       },
-      url: "/",
+      url: "https://wa.link/pdxz67",
+    },
+    {
+      title: () => {
+        return <Facebook fontSize="large" />;
+      },
+      url: "https://www.facebook.com/vipegb",
     },
   ];
   return (
@@ -23,7 +30,12 @@ function Footer({}) {
         <ul className="footer-navbar__list">
           {links.map((link) => (
             <li key={link.url} className="footer-navbar__list-item">
-              <a href={link.url}>{link.title()}</a>
+              <a
+                target='_blank'
+                href={link.url}
+              >
+                {link.title()}
+              </a>
             </li>
           ))}
         </ul>
