@@ -30,6 +30,11 @@
     transition: background-color 200ms;
     padding: 5px 0;
 }
+
+.header-navbar__list-item:first-child {
+    margin-top: 10px;
+}
+
 .header-navbar__list-item > a {
     color: rgb(0, 0, 0);
     text-decoration: none;
