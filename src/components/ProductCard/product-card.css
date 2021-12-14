@@ -37,4 +37,10 @@
     padding: 0.5rem;
     background-color: tomato;
     color: aliceblue;
+    cursor: pointer;
+    transition: padding 200ms;
+}
+
+.product-card__img .btn:hover {
+    padding: 0.6rem;
 }

@@ -2,11 +2,11 @@ import React from "react";
 
 import './product-card.css'
 
-function ProductCard() {
+function ProductCard({title}) {
   return (
     <div className="product-card">
       <div className="product-card__box">
-        <h2>Product card</h2>
+        <h2>{title}</h2>
         <div className="product-card__img">
           <img
             src="/logo512.png" alt="logo"
