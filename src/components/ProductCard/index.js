@@ -5,23 +5,22 @@ import './product-card.css'
 function ProductCard() {
   return (
     <div className="product-card">
-      <div
-        className="product-card__box"
-        >
-        <h1>Product card</h1>
-        <img
-          className="product-card__img"
-          src="/logo512.png"
-          alt="logo"
-        />
-        <button
-          className="product-card__btn"
-        >
-          Ver más
-        </button>
+      <div className="product-card__box">
+        <h2>Product card</h2>
+        <div className="product-card__img">
+          <img
+            src="/logo512.png" alt="logo"
+            className="img"
+          />
+          <button
+            className="btn"
+          >
+            Ver más
+          </button>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
 export { ProductCard };
