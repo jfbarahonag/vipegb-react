@@ -5,9 +5,14 @@
 }
 
 .product-card__box {
-    border: 1px solid red;
+    border:1px solid tomato;
     padding: 1rem;
     position: relative;
+    transition: box-shadow 100ms ease-in;
+}
+
+.product-card__box:hover {
+    box-shadow: 1px 1px 5px #0000006e;
 }
 
 .product-card__img {
