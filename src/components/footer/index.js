@@ -3,7 +3,7 @@ import { Facebook, Instagram, WhatsApp } from "@mui/icons-material";
 
 import "./footer.css";
 
-function Footer({}) {
+function Footer() {
   const links = [
     {
       title: () => {
@@ -33,6 +33,7 @@ function Footer({}) {
               <a
                 target='_blank'
                 href={link.url}
+                rel="noreferrer"
               >
                 {link.title()}
               </a>
