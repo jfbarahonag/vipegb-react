@@ -4,6 +4,8 @@ import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
 import { ProductCard } from "../../components/ProductCard";
 
+import './home.css'
+
 function Home() {
 
   useEffect(() => console.log(1), [])
@@ -32,13 +34,16 @@ function Home() {
   ]
 
   return ( 
-    <div style={{minHeight:'100%'}}>
+    <div className="home">
       <Header />
+      {/* TODO: Carousel */}
+      <div className="home-content">
       {
         products.map((product, idx) => (
           <ProductCard key={ idx } data={ product } />
         ))
       }
+      </div>
       <Footer />
     </div>
   );
