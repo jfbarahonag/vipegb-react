@@ -4,11 +4,20 @@
     padding: 1.5rem 2rem;
 }
 
+.product-card > a {
+    text-decoration: none;
+}
+
 .product-card__box {
     border:1px solid tomato;
     padding: 1rem;
     position: relative;
     transition: box-shadow 100ms ease-in;
+}
+
+
+.product-card__title {
+    color: black;
 }
 
 .product-card__box:hover {
@@ -22,7 +31,7 @@
 
 .product-card__img .img {
     position: relative;
-    width: 100%;
+    max-width: 80%;
     height: auto;
     left: 0%;
 }

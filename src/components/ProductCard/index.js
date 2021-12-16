@@ -1,24 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import './product-card.css'
 
-function ProductCard({title}) {
+function ProductCard({data}) {
   return (
     <div className="product-card">
-      <div className="product-card__box">
-        <h2>{title}</h2>
-        <div className="product-card__img">
-          <img
-            src="/logo512.png" alt="logo"
-            className="img"
-          />
-          <button
-            className="btn"
-          >
-            Ver más
-          </button>
+      <Link to={`/product/${data.id}`}>
+        <div className="product-card__box">
+          <h2 className="product-card__title">{data.title.toUpperCase()}</h2>
+          <div className="product-card__img">
+            <img src={data.imageUrl} alt="product" className="img" />
+            <button className="btn">Ver más</button>
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

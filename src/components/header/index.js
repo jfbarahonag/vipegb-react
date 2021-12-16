@@ -23,7 +23,8 @@ function ResponsiveButton({setExpanded}) {
   );
 }
 
-function Header({ children }) {
+function
+  Header({ children }) {
   //TODO: sections need to be received as props?
   const sections = [
     { "": "Home" },
@@ -44,7 +45,9 @@ function Header({ children }) {
         <ul className="header-navbar__list">
           {sections.map((section, idx) => (
             <li key={idx} className="header-navbar__list-item">
-              <Link to={`/${Object.keys(section)[0]}`}>
+              <Link style={{display: 'block'}}
+                to={`/${Object.keys(section)[0]}`}
+              >
                 {Object.values(section)[0]}
               </Link>
             </li>
