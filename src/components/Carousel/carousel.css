@@ -1,0 +1,49 @@
+.carousel {
+    min-height: 500px;
+    max-height: 500px;
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+}
+
+.carousel-container {
+    width: auto;
+    position: relative;
+}
+
+.carousel-container .carousel-container__img {
+    height: 500px;
+    width: auto;
+    position: relative;
+    left: 0%;
+}
+
+.carousel .carousel-arrow {
+    background: none;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    font-size: 50px;
+    border: none;
+    padding: 0 11px;
+    border-radius: 50%;
+    color: rgb(114, 166, 235);
+}
+
+.carousel .carousel-arrow:hover {
+    background-color: rgba(128, 128, 128, 0.589);
+}
+
+.left {
+    left: 40px;
+    
+}
+
+.right {
+    right: 40px;
+}
+
+.hidden {
+    visibility: hidden;
+}
